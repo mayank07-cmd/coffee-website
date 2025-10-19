@@ -1,4 +1,3 @@
-/* Importing Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap');
 
 * {
@@ -9,7 +8,6 @@
 }
 
 :root {
-  /* Colors */
   --white-color:#fff;
   --dark-color:#252525;
   --primary-color:#3b141c;
@@ -17,7 +15,6 @@
   --light-pink-color:#faf4f5;
   --medium-gray-color:#ccc;
 
-  /* Font Size */
   --font-size-s: 0.9rem;
   --font-size-n: 1rem;
   --font-size-m: 1.12rem;
@@ -25,19 +22,15 @@
   --font-size-xl: 2rem;
   --font-size-xxl: 2.3rem;
 
-  /* Font Weight */
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
-
-  /* Border radius */
   --border-radius-s: 8px;
   --border-radius-m: 30px;
   --border-radius-circle: 50%;
 
-  /* Site max width */
   --site-max-width:1300px;
 }
 
@@ -45,7 +38,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Stylings for whole site */
 ul {
   list-style: none;
 }
@@ -87,7 +79,6 @@ img{
   background: var(--secondary-color);
 }
 
-/* Navbar styling*/
 header {
   position: fixed;
   width: 100%;
@@ -130,7 +121,6 @@ header .navbar {
   display: none;
 }
 
-/* Hero Section Styling */
 .hero-section {
   min-height: 100vh;
   background: var(--primary-color);
@@ -196,7 +186,6 @@ header .navbar {
   margin-right: 30px;
 }
 
-/* About section styling */
 .about-section {
   padding: 120px  0;
   background: var(--light-pink-color);
@@ -247,7 +236,6 @@ header .navbar {
   color: var(--secondary-color);
 }
 
-/* Menu section styling */
 .menu-section {
   color:var(--white-color);
   background: var(--dark-color);
@@ -287,7 +275,6 @@ header .navbar {
   font-size:var(--font-size-m);
 }
 
-/* Testimonials section styling */
 .testimonials-section {
   padding: 50px 0 100px;
   background: var(--light-pink-color);
@@ -341,7 +328,6 @@ header .navbar {
   color: var(--primary-color);
 }
 
-/* Gallery section styling */
 .gallery-section {
   padding: 50px 0 100px;
 }
@@ -369,7 +355,6 @@ header .navbar {
   transform: scale(1.3);
 }
 
-/* Contact section styling */
 .contact-section {
   padding: 50px 0 100px;
   background: var(--light-pink-color);
@@ -431,7 +416,6 @@ header .navbar {
   background: transparent;
 } 
 
-/* Foote section styling */
 .footer-section {
   padding: 20px 0;
   background: var(--dark-color);
@@ -467,7 +451,6 @@ header .navbar {
    color: var(--white-color);
 }
 
-/* Responsive media query code for max width  1024px */
 @media screen and (max-width: 1024px) {
   .menu-section .menu-list {
     gap:60px;
@@ -477,7 +460,6 @@ header .navbar {
   }
 }
 
-/* Responsive media query code for max width  900px */
 @media screen and (max-width: 900px) {
   :root {
     --font-size-m: 1rem;
@@ -593,7 +575,6 @@ header .navbar {
   }
 }
 
-/* Responsive media query code for max width  640px */
 @media screen and (max-width: 640px) {
   .menu-section .menu-list {
     gap: 60px;
@@ -616,6 +597,5 @@ header .navbar {
     flex-direction: column;
     gap: 20px;
   }
-
 }
 
