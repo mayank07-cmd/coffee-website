@@ -171,17 +171,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <label for="coffee">Coffee Type</label>
       <select name="coffee" id="coffee" required>
         <option value="Espresso">Espresso</option>
+        <option value="Mocha">Macchiato</option>
         <option value="Cappuccino">Cappuccino</option>
         <option value="Latte">Latte</option>
         <option value="Mocha">Mocha</option>
+        <option value="Mocha">Americano</option>
       </select>
 
       <label for="food">Food Item</label>
       <select name="food" id="food" required>
         <option value="Croissant">Croissant</option>
         <option value="Donut">Donut</option>
+        <option value="Donut">Muffins</option>
         <option value="Sandwich">Sandwich</option>
         <option value="Burger">Burger</option>
+        <option value="Burger">Tiramisu</option>
       </select>
 
       <label for="quantity">Quantity</label>
