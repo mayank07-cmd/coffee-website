@@ -14,10 +14,10 @@ if (!isset($_SESSION['user_id'])) {
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --primary-color: #3b141c; /* deep brown */
-    --accent-color: #f3961c;  /* golden */
-    --bg-color: #ffffff;      /* white background */
-    --text-light: #fff3e6;    /* light text */
+    --primary-color: #3b141c; 
+    --accent-color: #f3961c;  
+    --bg-color: #ffffff;      
+    --text-light: #fff3e6;    
   }
 
   * {

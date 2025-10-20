@@ -1,4 +1,5 @@
 <?php 
+session_start(); 
 include 'db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -18,7 +19,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sss", $name, $email, $password);
 
     if ($stmt->execute()) {
-      echo "<script>alert('Signup successful! Redirecting to order page...'); window.location.href='order.php';</script>";
+      $_SESSION['user_id'] = $conn->insert_id;
+      $_SESSION['user_name'] = $name;
+
+      header("Location: order.php");
+      exit;
     } else {
       echo "<script>alert('Error while signing up! Try again.');</script>";
     }
@@ -33,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <title>Sign Up - Coffee Shop</title>
   <style>
     :root {
-      --primary-color: #3b141c; /* Coffee brown */
+      --primary-color: #3b141c; 
       --secondary-color: #f3961c;
       --white-color: #ffffff;
     }
@@ -47,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     body {
       height: 100vh;
-      background-color: var(--white-color); /* white background */
+      background-color: var(--white-color); 
       display: flex;
       justify-content: center;
       align-items: center;
@@ -55,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     .form-container {
-      background: var(--primary-color); /* brown card */
+      background: var(--primary-color);
       border-radius: 20px;
       padding: 50px 60px;
       width: 400px;

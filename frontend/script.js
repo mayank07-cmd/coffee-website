@@ -11,7 +11,7 @@ menuCloseButton.addEventListener("click",() => menuOpenButton.click());
 
 // Close menu when the nav( About, Menu , Gallery , Contact) button is clicked
 navLinks.forEach(link => {
- link.addEventListener("click", () => menuOpenButton.click());
+ link.addEventListener("click", () => menuOpenButton.click());z
 });
 
 const swiper = new Swiper('.slider-wrapper', {

@@ -19,25 +19,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if ($stmt->execute()) {
     header("Location: order_success.php");
     exit;
-  } else {
-    echo "<script>alert('Error placing order!');</script>";
-  }
+  } else { echo "<script>alert('Error placing order!');</script>"; }
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Order Coffee - Coffee Shop</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --primary-color: #3b141c; /* deep brown */
-    --accent-color: #f3961c;  /* golden */
-    --bg-color: #ffffff;      /* white background */
-    --card-color: #3b141c;    /* brown center card */
-    --text-light: #fff3e6;    /* light text inside card */
+    --primary-color: #3b141c; 
+    --accent-color: #f3961c;  
+    --bg-color: #ffffff;      
+    --card-color: #3b141c;    
+    --text-light: #fff3e6;    
   }
 
   * {
